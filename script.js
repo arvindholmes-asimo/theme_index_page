@@ -164,6 +164,9 @@ $(document).ready(function () {
     ],
   });
 })
+
+
+// chatbot handling script
 const footerEl = document.querySelector('.footer-container');
 const chatbot = document.querySelector('.chatbot');
 const banner = document.querySelector('#banner_carousel');
@@ -197,6 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
     chatbot.style.cssText = `top: ${banner.getBoundingClientRect().height - 80}px; transform: none;`;
 });
 
+// find out more button added dynamically by insertAdjacentHtml
 
 const btnTarget = document.querySelector("#what_we_offer .grid-item:last-child");
 const findOutMoreTemplate = `<button class="more-btn">Find out more</button>`;
