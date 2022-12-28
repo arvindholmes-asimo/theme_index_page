@@ -196,3 +196,8 @@ document.addEventListener("scroll", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     chatbot.style.cssText = `top: ${banner.getBoundingClientRect().height - 80}px; transform: none;`;
 });
+
+
+const btnTarget = document.querySelector("#what_we_offer .grid-item:last-child");
+const findOutMoreTemplate = `<button class="more-btn">Find out more</button>`;
+btnTarget.insertAdjacentHTML("afterbegin", findOutMoreTemplate);
